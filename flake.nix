@@ -2,10 +2,10 @@
   description = "Jujutsu VCS, a Git-compatible DVCS that is both simple and powerful";
 
   inputs = {
+    nixpkgs.url = github:nixos/nixpkgs/nixos-24.11;
+  
     # For listing and iterating nix systems
     flake-utils.url = "github:numtide/flake-utils";
-
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     # For installing non-standard rustc versions
     rust-overlay.url = "github:oxalica/rust-overlay";
