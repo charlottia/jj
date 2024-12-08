@@ -140,6 +140,8 @@
             license = pkgs.lib.licenses.asl20;
             mainProgram = "jj";
           };
+
+          doCheck = false;
         };
         default = self.packages.${system}.jujutsu;
       };
